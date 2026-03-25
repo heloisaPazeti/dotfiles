@@ -6,3 +6,4 @@
 /tmux/plugins/
 /nvim/lazy-lock.json
 *.local
+*.local.*
