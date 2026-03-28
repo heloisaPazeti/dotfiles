@@ -18,6 +18,7 @@ SETUVAR --export BASE24_0E:ee64ac
 SETUVAR --export BASE24_0F:b877db
 SETUVAR --export EDITOR:nvim
 SETUVAR --export VISUAL:nvim
+SETUVAR --export --path XDG_DATA_DIRS:/home/help/\x2elocal/share/flatpak/exports/share\x1e/var/lib/flatpak/exports/share\x1e/usr/local/share\x1e/usr/share
 SETUVAR __fish_initialized:4300
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:6c6f93

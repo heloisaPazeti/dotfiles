@@ -1,0 +1,7 @@
+show=drun
+width=450
+height=300
+prompt=Pesquisar
+insensitive=true
+term=kitty
+allow_markup=true
