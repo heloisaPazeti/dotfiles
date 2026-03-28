@@ -213,7 +213,7 @@ tooltip {
     color: @gray;
 }
 
-/* Notinha: padrão apagada */
+
 #custom-note {
     color: @orange; 
     margin-right: 6px;
