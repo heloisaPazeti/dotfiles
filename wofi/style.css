@@ -1,12 +1,16 @@
+@define-color bg rgba(26, 28, 35, 0.7);
+@define-color purple #B877DB;
+@define-color blur-purple rgba(184, 119, 219, 0.2);
+
 window {
     background-color: transparent; /* Deixe a janela transparente */
     font-family: "FantasqueSansM Nerd Font";
-    color: #B877DB;
+    color: @purple;
 }
 
 #outer-box {
-    background-color: rgba(26, 28, 35, 0.7);
-    border: 1px solid #B877DB;
+    background-color: @bg;
+    border: 1px solid @purple;
     border-radius: 12px;
     padding: 10px; /* Espaçamento interno para o conteúdo não colar na borda branca */
 }
@@ -18,12 +22,12 @@ window {
     border-radius: 2px;
     
     border: none;
-    border-bottom: 1px solid #B877DB; 
-    color: #B877DB;
+    border-bottom: 1px solid @purple; 
+    color: @purple;
 }
 
 #entry:selected {
-    background-color: rgba(184, 119, 219, 0.2);
+    background-color: @blur-purple;
     color: #ffffff;
     border-radius: 6px;
 }
@@ -35,5 +39,5 @@ window {
 }
 
 #input > image {
-    color: #B877DB;
+    color: @purple;
 }
