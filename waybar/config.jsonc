@@ -210,6 +210,7 @@
         "return-type": "json",
         "interval": 3600,
         "on-click": "kitty --class=kitty-float -e yay -Syu",
+        "on-click": "rm -f /tmp/waybar_updates.cache && kitty --class=kitty-float -e yay -Syu ",
         "tooltip": true
     },
     "battery": {
