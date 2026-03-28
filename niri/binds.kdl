@@ -15,13 +15,12 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Super+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Super+Q hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Super+T hotkey-overlay-title="Open a Terminal: kitty floating" { spawn "kitty" "--class" "kitty-float"; }
-    Super+F hotkey-overlay-title="Open a browser: Zen" { spawn "zen-browser"; }
+    Super+F hotkey-overlay-title="Open a browser: firefox" { spawn "firefox"; }
     Super+S hotkey-overlay-title="Open a music player: Spotify" { spawn-sh "pgrep spotify || spotify"; }
     Super+O hotkey-overlay-title="Open a note app: Obsidian" { spawn "obsidian"; }
-    Super+W hotkey-overlay-title="Open a video app: Stremi" { spawn "flatpak" "run" "com.stremio.Stremio"; }
-    Super+space hotkey-overlay-title="Open launcher: Wofi" { spawn "wofi" "--show" "drun"; }
+    Super+W hotkey-overlay-title="Open launcher: Wofi" { spawn "wofi" "--show" "drun"; }
 
     //Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: HyprLock" { spawn "hyprlock"; }
@@ -58,7 +57,7 @@ binds {
     // or do a four-finger swipe up on a touchpad.
     Mod+Z repeat=false { toggle-overview; }
 
-    Super+Backspace repeat=false { close-window; }
+    Super+K repeat=false { close-window; }
 
     Super+Left  { focus-column-left; }
     Super+Down  { focus-window-down; }
@@ -80,8 +79,8 @@ binds {
 
     // Alternative commands that move across workspaces when reaching
     // the first or last window in a column.
-    Super+J     { focus-window-or-workspace-down; }
-    Super+K     { focus-window-or-workspace-up; }
+    //Super+J     { focus-window-or-workspace-down; }
+    //Super+K     { focus-window-or-workspace-up; }
     Super+Shift+J     { move-window-down-or-to-workspace-down; }
     Super+Shift+K     { move-window-up-or-to-workspace-up; }
 

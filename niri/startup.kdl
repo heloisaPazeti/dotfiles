@@ -6,8 +6,8 @@
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "awww-daemon"
-spawn-at-startup "awww img -o eDP-1 ~/Pictures/wpp/dark.webp"
-spawn-at-startup "awww img -o HDMI-A-1 ~/Pictures/wpp/dark.webp"
+spawn-at-startup "awww img -o eDP-1 ~/Pictures/wallpapers/wallpaper.png"
+spawn-at-startup "awww img -o HDMI-A-1 ~/Pictures/wallpapers/wallpaper.png"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
