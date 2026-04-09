@@ -4,9 +4,9 @@ return {
 	opts = {
 		extra_groups = {
 			-- núcleo/janela
-			"NormalFloat",
-			"FloatBorder",
-			"FloatTitle",
+			-- "NormalFloat",
+			-- "FloatBorder",
+			-- "FloatTitle",
 			"SignColumn",
 			"LineNr",
 			"FoldColumn",

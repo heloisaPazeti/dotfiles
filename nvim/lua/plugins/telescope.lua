@@ -4,7 +4,7 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     config = function()
         local telescope = require('telescope')
-        local builtin = require('telescope.builtin') 
+        local builtin = require('telescope.builtin')
 
         -- Inclui arquivos ocultos e ignora .git
         local vimgrep_arguments = { unpack(require('telescope.config').values.vimgrep_arguments) }
@@ -30,4 +30,4 @@ return {
         vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
     end
 
-} 
+}
