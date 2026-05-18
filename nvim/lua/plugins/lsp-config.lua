@@ -64,7 +64,16 @@ return {
 				},
 			})
 			vim.lsp.config("gopls", { capabilities = capabilities })
-			vim.lsp.config("clangd", { capabilities = capabilities })
+			vim.lsp.config("clangd", {
+				capabilities = capabilities,
+				cmd = {
+					"clangd",
+					"--fallback-style=llvm",
+				},
+				init_options = {
+					fallbackFlags = { "-fopenmp" },
+				},
+			})
 			vim.lsp.enable({ "lua_ls", "gopls", "clangd" })
 
 			-- ────────────────────────────────────────

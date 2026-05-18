@@ -45,11 +45,10 @@ return {
 	},
 	config = function(_, opts)
 		require("transparent").setup(opts)
-		local function apply()
+		-- O próprio plugin já roda clear() em VimEnter/ColorScheme/FileType.
+		-- Só precisamos garantir que o estado fique habilitado uma vez.
+		if not vim.g.transparent_enabled then
 			vim.cmd("TransparentEnable")
 		end
-
-		-- aplica no startup e após trocar de tema
-		vim.api.nvim_create_autocmd({ "VimEnter", "ColorScheme" }, { callback = apply })
 	end,
 }

@@ -32,8 +32,13 @@ return {
 			extensions = {},
 		})
 		local transparent = require("transparent")
-		for _, p in ipairs({ "lualine_b", "lualine_c", "lualine_x", "lualine_y" }) do
-			transparent.clear_prefix(p)
+		local prefixes = { "lualine_b", "lualine_c", "lualine_x", "lualine_y" }
+		local function apply_prefixes()
+			for _, p in ipairs(prefixes) do
+				transparent.clear_prefix(p)
+			end
 		end
+		apply_prefixes()
+		vim.api.nvim_create_autocmd("ColorScheme", { callback = apply_prefixes })
 	end,
 }
