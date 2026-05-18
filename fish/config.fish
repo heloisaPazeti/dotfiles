@@ -23,5 +23,6 @@ if status is-interactive
     end
 
     alias rm='trash-put'
+    alias esp_env="source $HOME/esp/esp-idf/export.fish"
 end
 
