@@ -48,14 +48,6 @@ return {
 						},
 					},
 				},
-
-				-- ────────────────────────────────────────
-				-- Formatar ao salvar
-				-- ────────────────────────────────────────
-				format_on_save = {
-					timeout_ms = 2000,
-					lsp_fallback = true, -- usa o LSP se não houver formatador configurado
-				},
 			})
 
 			-- ────────────────────────────────────────

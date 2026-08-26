@@ -77,7 +77,8 @@ tooltip {
   padding: 8px 10px;
 }
 
-#clock {
+#clock,
+#custom-clock {
     color: @pink;
 }
 /* Estado normal: mostra base e esconde hover */
@@ -123,7 +124,7 @@ tooltip {
     margin-left: 1px;
 }
 
-#network.hover { font-size: 0;  transition: font-size .2s; color: @green;} 
+#network.hover { font-size: 0;  transition: font-size .2s; color: @gray;} 
 
 #networkmodule:hover #network.hover{ font-size: 12.5px; }
 
@@ -134,14 +135,14 @@ tooltip {
 #cpu.base.warning { color: @blue;}
 #cpu.base.critical { color: @red;}
 
-#cpu.hover { font-size: 0;  transition: font-size .2s; color: @green;} 
+#cpu.hover { font-size: 0;  transition: font-size .2s; color: @gray;} 
 
 #cpumodule:hover #cpu.hover{ font-size: 12.5px; }
 
 #memory.base.warning { color: @blue;}
 #memory.base.critical { color: @red;}
 
-#memory.hover { font-size: 0;  transition: font-size .2s; color: @green;} 
+#memory.hover { font-size: 0;  transition: font-size .2s; color: @gray;} 
 
 #memorymodule:hover #memory.hover{ font-size: 12.5px; }
 
@@ -199,21 +200,23 @@ tooltip {
 }
 
 #custom-updates.outdated {
-    margin-left: 2px;
     color: @red;
 }
 
+#custom-updates.offline {
+    margin-left: 0px;
+    color: @gray;
+}
+
 #mpris {
-    font-size: 12.5px;
     color: @orange;
     padding: 0;
 }
 #mpris.paused {
-    font-size: 0px;
     color: @gray;
 }
 
-
+/* Notinha: padrão apagada */
 #custom-note {
     color: @orange; 
     margin-right: 6px;

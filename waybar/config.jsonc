@@ -1,4 +1,5 @@
 {
+    "output": ["HDMI-A-1", "eDP-1"],
     "spacing": 10, // Gaps between modules (4px)
     "margin-bottom": 0,
     "margin-top": 7,
@@ -27,19 +28,19 @@
     },
     "group/clockmodule": {
         "orientation": "horizontal",
-        "modules": ["clock#base", "clock#hover"],
+        "modules": ["custom/clock", "clock#hover"],
         "tooltip": false
       }, 
 
-    "clock#base": {
+    "custom/clock": {
+        "exec": "~/.config/waybar/scripts/clock.sh",
         "interval": 1,
-        "timezone": "America/Sao_Paulo",
-        "format": " {:%H:%M}",
+        "return-type": "json",
         "tooltip": false
     },
     "clock#hover": {
         "interval": 1,
-        "timezone": "America/Sao_Paulo",
+        "timezone": "Europe/Paris",
         "format": " {:%b %d, %Y}",
         "tooltip": true, 
         "tooltip-format": "\n<tt>{calendar}</tt>",
@@ -210,7 +211,6 @@
         "return-type": "json",
         "interval": 3600,
         "on-click": "kitty --class=kitty-float -e yay -Syu",
-        "on-click": "rm -f /tmp/waybar_updates.cache && kitty --class=kitty-float -e yay -Syu ",
         "tooltip": true
     },
     "battery": {
